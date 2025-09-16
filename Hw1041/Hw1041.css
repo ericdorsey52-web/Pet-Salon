@@ -1,0 +1,99 @@
+/* General Page Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f9f7f7, #e3f2fd);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #4db6ac;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 5px solid #00897b;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Main Sections */
+main {
+  flex: 1;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.flex-parent-between{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.count-section, .list-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.count-section h2, .list-section h2 {
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+#petCount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff7043;
+  text-align: center;
+}
+
+form.container {
+  background: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+/* Pet List */
+#petList {
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#petList li {
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  background: #f1f8e9;
+  border-left: 5px solid #66bb6a;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
