@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Pet - Happy Paws</title>
+  <link rel="stylesheet" href="Hw1042.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+<header>
+    <h1>🐶 Register Your Pet</h1>
+    <p>Your pet’s second home!</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="HW1042.html">Salon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index1042.html">About Us</a>       
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services2.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hw1042Regsration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-parent-between">
+    <form class="container" id="petRegistration">
+        <div class="mb-3">
+            <label class="form-label" for="petName">Pet Name:</label>
+            <input type="text" class="form-control" id="petName" name="petName">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="petAge">Pet Age:</label>
+            <input type="number" class="form-control" id="petAge" name="petAge">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="petBreed">Breed:</label>
+            <input type="text" class="form-control" id="petBreed" name="petBreed">
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label" for="petGender">Gender:</label>
+            <select class="form-select" id="petGender" name="Gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="petService">Service:</label>
+            <select class="form-select" id="petService" name="petService">
+                <option value="">Select Service</option>
+                <option value="grooming">Grooming</option>
+                <option value="bath">Bath</option>
+                <option value="nailTrim">Nail Trim</option>
+                <option value="haircut">Haircut</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="petType">Type:</label>
+            <select class="form-select" id="petType" name="petType">
+                <option value="">--Select--</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <option value="Other">Other</option>
+                </select>
+            </label>
+        </div>
+
+        <button type="submit" class="btn">Register Pet</button>
+
+        <!-- Link back to home -->
+        <a href="HW1042.html" class="btn">Back to Home</a>
+    </form>
+</main>
+
+<script src="Hw1042.js"></script>
+
+<div class="flex-parent-between">
+        <!-- Display total number of registered pets -->
+        <section class="count-section">
+            <h2>Total Pets Registered:</h2>
+            <p id="petCount">0</p>
+        </section>
+</div>
+<footer>
+    <p>
+        &copy; 2025 Happy Paws Pet Salon
+    </p>
+</footer>
+
+
+
+
+</html>
